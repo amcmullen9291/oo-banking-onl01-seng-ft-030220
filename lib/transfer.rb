@@ -19,6 +19,10 @@ class Transfer
     if @sender.balanace< @amount || !@sender.valid? 
       @status = "rejected"
       "Transaction rejected. Please check your account balance."
+    elsif status != "complete"
+        
+  else
+    
     end
   end 
 
